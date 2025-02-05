@@ -21,7 +21,7 @@ pipeline {
         stage('Instalar Dependências - Backend') {
             steps {
                 dir('backend') {
-                    sh 'npm install'
+                    sh 'go mod tidy'
                 }
             }
         }
@@ -36,7 +36,7 @@ pipeline {
         stage('Executar Testes - Backend') {
             steps {
                 dir('backend') {
-                    sh 'npm test'
+                    sh 'go test ./... -v'
                 }
             }
         }
