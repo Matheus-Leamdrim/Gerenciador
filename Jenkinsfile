@@ -6,7 +6,6 @@ pipeline {
         FRONTEND_IMAGE = 'frontend'
         BACKEND_IMAGE = 'backend'
         MOBILE_IMAGE = 'mobile'
-
         KUBE_NAMESPACE = 'dev'
     }
 
