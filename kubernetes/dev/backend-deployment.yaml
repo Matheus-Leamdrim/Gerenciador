@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: b7fc73f3-32cb-40f8-833e-bc684689b0f2/backend:latest
+        image: backend:latest
         ports:
         - containerPort: 3000
         envFrom:
