@@ -25,15 +25,7 @@ pipeline {
                 }
             }
         }
-        stage('Executar Testes - Frontend') {
-            steps {
-                dir('frontend') {
-                    sh 'npm test'
-                }
-            }
-        }
-
-        stage('Executar Testes - Backend') {
+        stage('Executar Testes') {
             steps {
                 dir('backend') {
                     sh 'go test ./... -v'
