@@ -21,6 +21,7 @@ Gerenciador/
 │── mobile/       # Aplicação mobile (Flutter)
 │── backend/      # API backend (GoLang + PostgreSQL)
 
+
 🖥️ Frontend
 A aplicação web permite visualizar uma lista de tarefas obtidas do backend simulado e inclui um filtro de busca por nome.
 
@@ -38,8 +39,9 @@ O servidor estará disponível em http://localhost:3000
 
 🧪 Testes
 Para rodar os testes unitários com Jest:
-
 npm test
+
+
 📱 Mobile
 O aplicativo mobile permite criar, editar e excluir tarefas, sincronizando os dados com o backend simulado em tempo real.
 
@@ -49,6 +51,7 @@ Acesse a pasta do projeto:
 cd mobile
 Instale as dependências do Flutter:
 
+
 flutter pub get
 Execute: dart websocket_server.dart no bash, dentro da pasta Mobile.
 execute também: flutter run
@@ -56,6 +59,7 @@ execute também: flutter run
 🧪 Testes
 Para rodar os testes:
 flutter test
+
 
 ⚙️ Backend
 A API backend fornece endpoints RESTful para operações CRUD de tarefas e inclui autenticação com JWT.
